@@ -6,15 +6,14 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: 0.2s ease;
     text-decoration: none !important;
+    flex-wrap: wrap;
 }
 
 :root{
     --blueColor : #1DA1F2;
-    --blueColorHover : #1A8CD8;
     --blackColor : #14171A;
     --darkColor :#202327;
     --grayColor: #AAB8C2;
-    --darkTextColor: #4A4C4E;
 }
 
 body{
@@ -31,15 +30,15 @@ body{
     align-items: center;
     flex-direction: row;
     gap:2.5rem;
-    height: auto;
+    height: 100%;
     width:auto;
     flex-wrap: wrap;
+
 }
 .user-data{
-    height: 25rem;
-    width:22rem;
+    width:auto;
     background-color: var(--darkColor);
-    border-radius: 1rem;
+    border-radius: 8px;
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
@@ -49,8 +48,8 @@ body{
     margin-bottom: 1rem;
 }
 .input , .generate-qr-code , .download-qr-code{
-    height: 2.7rem;
-    width:100%;
+    height: 2.5rem;
+    width:auto;
     border:none;
     outline:none;
     border-radius: 0.7rem;
@@ -75,12 +74,12 @@ body{
     outline:none;
     border-radius: 0.7rem;
     font-size: 0.9rem;
-    padding: 6px;
+    padding: 10px 20px;
    
 }
 .qr-details:hover{
     background-color: white;
-    color: var(--blueColorHover);
+    color: black;
 }
 .qr-url {
     background-color: var(--blueColor);
@@ -93,11 +92,11 @@ body{
     outline:none;
     border-radius: 0.7rem;
     font-size: 0.9rem;
-    padding: 6px ;
+    padding: 10px 33px;
 }
 .qr-url:hover{
     background-color: white;
-    color: var(--blueColorHover);
+    color: black;
 }
 .generate-qr-code {
     background-color: var(--blueColor);
@@ -107,19 +106,19 @@ body{
 }
 .generate-qr-code:hover{
     background-color: white;
-    color: var(--blueColorHover);
+    color:black;
 }
 .download-qr-code{
-    background-color:rgb(109, 106, 106);
+    background-color:var(--blueColor);
     color:white;
     cursor: pointer;
     font-weight: 600;
-    padding-left: 40%;
+    display: flex;
 }
 
 .download-qr-code:hover{
     background-color: white;
-    color: rgb(109, 106, 106);
+    color: black;
     
 }
 .qr-canvas{
