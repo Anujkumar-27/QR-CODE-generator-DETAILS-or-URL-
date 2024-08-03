@@ -1,9 +1,3 @@
-:root{
-    
-    --border-radius: 8px;
-    --secondary-color: #fff;
-    --border-color: #7fb7c9;
-}
 *{
     margin:0;
     padding:0;
@@ -12,22 +6,35 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: 0.2s ease;
     text-decoration: none !important;
+    flex-wrap: wrap;
+}
+
+:root{
+    
+    --border-radius: 8px;
+    --secondary-color: #fff;
+    --border-color: #7fb7c9;
 }
 
 body{
-    width: 100%;
-    height: 100vh;
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     background-color:  #14171A;
+
 }
 
 .box{
-    background-color: #313336;
+    background-color: #202327;;
     padding: 30px;
     width: 400px;
     border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 .qr-header h2{
@@ -38,6 +45,8 @@ body{
 }
 
 .qr-header input{
+    background-color: #313336;
+    color:white;
     width: 100%;
     margin-block: 12px;
 }
@@ -47,7 +56,7 @@ body{
     border-radius: var(--border-radius);
     font-size: 18px;
     outline: none;
-    border: 2px solid var(--border-color);
+    border: 2px;
 }
 
 .qr-header label{
@@ -65,18 +74,20 @@ body{
     justify-content: center;
 }
 .qr-footer a{
-    background-color: var(--secondary-color);
+    background-color: #1A8CD8;
+    color:white;
     text-decoration: none;
     font-size: 20px;
     padding: 10px 30px;
     margin-inline: 10px;
-    color: var(--primary-color);
+    margin-bottom: 10px;
+    
     font-weight: 600;
     border-radius: var(--border-radius);
 }
 .qr-footer a:hover{
-    background-color: #1A8CD8;
-    color:white ;
+    background-color: white;
+    color:black ;
 }
 .qr-details {
     background-color: #1A8CD8;
@@ -89,14 +100,13 @@ body{
     outline:none;
     border-radius: 0.7rem;
     font-size: 0.9rem;
-    padding: 6px;
-    margin: 10px;;
-    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
 
 }
 .qr-details:hover{
     background-color: white;
-    color: var(--blueColorHover);
+    color: black;
 }
 .qr-url {
     background-color:#1A8CD8;
@@ -109,14 +119,13 @@ body{
     outline:none;
     border-radius: 0.7rem;
     font-size: 0.9rem;
-    padding: 6px ;
+    padding: 10px 33px;
     margin: 10px;
-    text-decoration: none;
 
 }
 .qr-url:hover{
     background-color: white;
-    color: var(--blueColorHover);
+    color: black;
 }
 
 .qr-body{
