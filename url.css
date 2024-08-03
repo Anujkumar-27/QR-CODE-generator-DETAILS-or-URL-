@@ -1,0 +1,146 @@
+:root{
+    
+    --border-radius: 8px;
+    --secondary-color: #fff;
+    --border-color: #7fb7c9;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.2s ease;
+    text-decoration: none !important;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #14171A;
+}
+
+.box{
+    background-color: #313336;
+    padding: 30px;
+    width: 400px;
+    border-radius: var(--border-radius);
+}
+
+.qr-header h2{
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 24px;
+
+}
+
+.qr-header input{
+    width: 100%;
+    margin-block: 12px;
+}
+
+.qr-header input, select{
+    padding: 8px;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    outline: none;
+    border: 2px solid var(--border-color);
+}
+
+.qr-header label{
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+.qr-header div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.qr-footer{
+    display: flex;
+    justify-content: center;
+}
+.qr-footer a{
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-inline: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+    border-radius: var(--border-radius);
+}
+.qr-footer a:hover{
+    background-color: #1A8CD8;
+    color:white ;
+}
+.qr-details {
+    background-color: #1A8CD8;
+    color:white;
+    cursor: pointer;
+    font-weight: 600;
+    height: 2.7rem;
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius: 0.7rem;
+    font-size: 0.9rem;
+    padding: 6px;
+    margin: 10px;;
+    text-decoration: none;
+
+}
+.qr-details:hover{
+    background-color: white;
+    color: var(--blueColorHover);
+}
+.qr-url {
+    background-color:#1A8CD8;
+    color:white;
+    cursor: pointer;
+    font-weight: 600;
+    height: 2.7rem;
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius: 0.7rem;
+    font-size: 0.9rem;
+    padding: 6px ;
+    margin: 10px;
+    text-decoration: none;
+
+}
+.qr-url:hover{
+    background-color: white;
+    color: var(--blueColorHover);
+}
+
+.qr-body{
+    display: grid;
+    place-items: center;
+    padding:10px;
+}
+
+.qr-body img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-block: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    justify-content: center;
+}
+
+@media screen and (max-width:520px){
+    .box{
+        width: 80%;
+    }
+    .qr-footer a{
+        padding: 12px;
+        font-size: 16px;
+    }
+}
