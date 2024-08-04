@@ -17,6 +17,7 @@
 }
 
 body{
+    padding: 20px 20px 20px 20px;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -39,7 +40,7 @@ body{
     width:auto;
     background-color: var(--darkColor);
     border-radius: 8px;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
     gap:0.6rem;
@@ -63,6 +64,7 @@ body{
     color:white;
     /* font-size: 0.95rem; */
 }
+
 .qr-details {
     background-color: var(--blueColor);
     color:white;
@@ -75,7 +77,9 @@ body{
     border-radius: 0.7rem;
     font-size: 0.9rem;
     padding: 10px 20px;
-   
+    margin: 10px;
+    
+    
 }
 .qr-details:hover{
     background-color: white;
@@ -93,6 +97,7 @@ body{
     border-radius: 0.7rem;
     font-size: 0.9rem;
     padding: 10px 33px;
+    margin: 10px;
 }
 .qr-url:hover{
     background-color: white;
