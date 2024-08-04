@@ -1,5 +1,5 @@
 *{
-    margin:0;
+    margin: 1px;
     padding:0;
     box-sizing: border-box;
     list-style: none;
@@ -28,7 +28,7 @@ body{
 .box{
     background-color: #202327;;
     padding: 30px;
-    width: 400px;
+    width: 25rem;
     border-radius: var(--border-radius);
     display: flex;
     justify-content: center;
@@ -81,7 +81,7 @@ body{
     padding: 10px 30px;
     margin-inline: 10px;
     margin-bottom: 10px;
-    
+
     font-weight: 600;
     border-radius: var(--border-radius);
 }
@@ -144,12 +144,20 @@ body{
     justify-content: center;
 }
 
-@media screen and (max-width:520px){
+/* @media screen and (max-width:520px){
     .box{
         width: 80%;
     }
     .qr-footer a{
         padding: 12px;
         font-size: 16px;
+    }
+} */
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
